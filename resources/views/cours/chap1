@@ -1,0 +1,56 @@
+<h1>Le HTML</h1>
+    <h2>Chapitre 1 : Le HTML c'est quoi ?</h2>
+    <p>
+        Le HTML signifie de façon brute "Hypertext Markup Language", oui c'est un nom assez barbare mais vous 
+        allez voir que ce n'est pas si compliqué à comprendre.
+        Le HTML est la base du site web, il encapsule les différente section de votre site dans ce que l'on
+        appelle des "Balise". Regardons ensemble ce qu'est une balise :
+    </p>
+    <pre><code> &lt;div&gt; Bonjour je suis un texte sauvage ! &lt;/div&gt; </code></pre>
+    <p>
+        Ici j'ai encapsule le texte dans une balise "div". Avant d'expliquer ce qu'est la balise div, nous allons voir
+        qu'il existe différents style de balise justement : <br>
+        Vous avez : <br>
+        <ul>
+            <li>Les balises de type "block"</li>
+            <li>Les balises de type "inline"</li>
+        </ul>
+    </p>
+    <p>
+        Quel est la différence ? C'est très simple, quand on utilise les balises de type block, le navigateur 
+        va faire en sorte que chaque "block" soit mis à la suite de l'autre mais en dessous et non pas en ligne.
+        Du coup "inline" c'est l'inverse les différentes balises vont se positionner en ligne ! Vous verrez vous allez
+        de suite comprendre.
+    </p>
+    <p>
+        Maintenant prenez un editeur de texte de type NotePad ++ ou autre (pour coloriser le HTML) ça se trouve 
+        très facilement sur le net, ma préférence étant VSCode ;).
+    </p>
+    <p>Copiez collez ceci :</p>
+    <pre>
+        <code>
+        &lt;!-- Ici nous avons 2 blocks à la suite --&gt;
+        &lt;div&gt; Block 1 ! &lt;/div&gt;
+        &lt;div&gt; Block 2 ! &lt;/div&gt;
+
+        &lt;!-- Ici nous avons 2 inlines à la suite --&gt;
+        &lt;span&gt; Ceci est un inline, il ne retrounera donc pas à la ligne&lt;/span&gt;
+        &lt;span&gt; Ceci est un inline 2, il ne retrounera donc pas à la ligne&lt;/span&gt;
+        </code>
+    </pre>
+
+    <p>
+        Quand c'est fait enregistrez le fichier dans un format .html et double cliquez dessus ! Regardez le resultat. 
+        Alors vous avez compris la différence ? Si non relisez ce qui est écrit au dessus ;)
+    </p>
+    <div class="resume-chap">
+        <span class="title-resume-chap">En résumé :</span>
+        <p>
+            Les balises encapsulent le texte html, elle se différencie en 2 grandes catégories : 
+            <ul>
+                <li>Les Blocks : A chaque block je reviens à la ligne</li>
+                <li>Les Inlines : Je reste sur une ligne</li>
+            </ul>
+            Le Language HTML est la base d'un site Web
+        </p>
+    </div>

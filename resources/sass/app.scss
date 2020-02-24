@@ -1,0 +1,352 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap');
+
+// Variables
+@import 'variables';
+
+//MEDIA QUERIES
+@media (max-width : 710px){
+    div.wrapper{
+        padding: 80px 1em;
+    }
+    body{
+        background-color: $white!important;
+    }
+    header{
+        position: fixed!important;
+        top: 0;
+        left: 0;
+    }
+    nav.nav-desktop{
+        display: none;
+    }
+    nav.nav-mobile{
+        text-transform: uppercase;
+        display: block!important;
+        >img{
+            width: 30px;
+            transition: ease .3s;
+        }
+        >.nav-ul-mobile{
+            a{
+                color: $body-bg;
+            }
+            display: flex;
+            transition: ease .5s;
+            flex-direction: column;
+            align-items: center;
+            font-size: 2em;
+            >li{
+                width: 100%;
+            }
+            >img{
+                transition: ease .5s;
+                width: 30px;
+                position: absolute;
+                right: 5%;
+                top: .5em;
+            }
+            position: fixed;
+            top: 0;
+            left: 100vw;
+            li{
+                list-style: none;
+            }
+            background-color: $cyan;
+            color: white;
+            width: 100vw;
+            min-height: 100vh;
+            padding: 2em 0;
+            margin: 0;
+        }
+    }
+}
+
+//Main body
+body {
+    font-size: $font-size-base;
+    font-family: $font-family-sans-serif;
+    background-color: $body-bg;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.wrapper {
+    width: $wrapper;
+    margin: auto;
+    padding: 2em;
+    padding-top: 80px;
+    background-color: $white;
+    //box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.1);
+}
+
+//Header
+header {
+    >.wrapper-header {
+        background-color: $white;
+        border-bottom: 5px solid $grey;
+        margin: auto;
+        width: $wrapper;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 0;
+
+        >nav.nav-desktop {
+            >ul {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                margin: 0;
+                padding: 0;
+
+                >li {
+                    list-style: none;
+                }
+            }
+        }
+        >nav.nav-mobile{
+            display: none;
+        }
+    }
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.logo-title {
+    font-size: 2em;
+    font-weight: bold;
+    color: $blue;
+}
+
+.menu-cours {
+    &:hover {
+        +.menu-list_of_cours {
+            display: block;
+        }
+    }
+}
+
+.menu-list_of_cours {
+    >a {
+        &:hover {
+            background-color: $grey;
+            color: $blue;
+        }
+
+        color: black;
+    }
+
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.2);
+    transition: ease 1s;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+    overflow: hidden;
+
+    &:hover {
+        display: block;
+    }
+}
+
+li.menu-cours-li {
+    position: relative;
+}
+
+//Chap
+
+.resume-chap {
+    padding: 2em;
+    font-weight: lighter;
+    background-color: $grey;
+
+    >.title-resume-chap {
+        font-weight: bold;
+    }
+}
+
+.chap-select {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1em 0;
+}
+
+.chap-timeline {
+    display: flex;
+    max-width: 100%;
+
+    >.chap-timeline-select {
+        background-color: $grey;
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        height: 5px;
+        padding: 0;
+        margin: 1px;
+        min-width: 5%;
+
+        &:hover {
+            background-color: $blue;
+        }
+    }
+}
+
+.chap-selected {
+    background-color: $blue !important;
+}
+
+//code 
+.code-ba {
+    font-weight: bold;
+    color: $blue;
+}
+
+.code-entt {
+    font-weight: bold;
+    color: $orange;
+}
+
+//footer
+
+div.footer {
+    width: $wrapper;
+    margin: auto;
+    padding: 2em 0;
+    font-size: .8em;
+}
+
+//FOrm
+
+.option-code {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $orange;
+    color: white;
+    padding: .5em 0;
+    font-weight: lighter;
+    border-radius: .1em;
+}
+
+.add-chap-bloc {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-chap-flex-option{
+    display: flex;
+    padding: 1em;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    >*{
+        margin: .2em 0;
+        width: 49%;
+    }
+}
+
+.output {
+    margin: auto;
+    padding: 2em;
+    width: 50%;
+    background-color: $white;
+    box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.1);
+}
+.add-chap-hidden{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8)
+}
+.button-flex{
+    display: flex;
+}
+.flex-output{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+//connexion pop up
+.connexion-popup{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 999;
+    >div{
+        display: none;
+        margin: auto;
+        border-radius: 2px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $white;
+        box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.1);
+        padding: 2em;
+    }
+}
+
+//Admin
+.add-cours-list{
+    margin-bottom: 2em;
+}
+.add-cours-list-cour{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid $grey;
+    >span{
+        margin-left: 1em;
+        font-weight: bold;
+    }
+}
+.member-list-bloc{
+    margin-bottom: 2em;
+}
+.member-list-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid $grey;
+    align-items: center;
+    >span{
+        flex: 1;
+    }
+    >.member-name{
+        margin-left: 1em;
+        font-weight: bold;
+    }
+    >.member-rights-member{
+        color: $green;
+    }
+    >.member-rights-admin{
+        color: $red;
+    }
+    >.member-mail{
+        font-weight: lighter;
+    }
+}
+

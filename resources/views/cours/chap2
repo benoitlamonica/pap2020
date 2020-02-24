@@ -1,0 +1,85 @@
+<h1>Le HTML</h1>
+<h2>Chapitre 2 : Bien débuter.</h2>
+<p>
+    Pour bien débuter une page html, il faut tout d'abord y mettre le bon contenu d'en tête : les "métas". Regardez ce code : 
+</p>
+<pre>
+    <code> 
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="fr"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+            &lt;title&gt;Titre du site&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;!--Contenu --&gt;
+        &lt;/body&gt;
+        &lt;/html&gt; 
+    </code>
+</pre>
+<p>
+    Ceci est le code de base à entrer dans toutes vos pages HTML, il permet de donner des information aux navigateurs
+    ainsi qu'aux moteurs de recherche type google. On ne va pas encore s'attarder dessus, pensez juste à faire un copier/coller
+    à chaque fois que vous créez une page HTML :).
+</p>
+<p>
+    On va décrypter rapidement le code, déjà il faut savoir que le corp de votre page ( BODY en anglai ) va se 
+    situer entre les balises <span class="code-ba">&lt;body&gt;</span> et <span class="code-ba">&lt;/body&gt;</span>. Ensuite
+    les balises <span class="code-ba">&lt;title&gt;</span> et <span class="code-ba">&lt;/title&gt;</span> renferment
+    quant à elles le titre de votre site, c'est très simple il suffit de parler un peu anglai. Enfin le <span class="code-entt">&lt;!DOCTYPE html&gt;</span> 
+    détermine la version de html utilisé par le navigateur !
+</p>
+<p>
+    La balise <span class="code-ba">&lt;meta&gt;</span> permet de définir comme dis précedement les information pour 
+    les navigateurs elle sont toutes contenues avec <span class="code-ba">&lt;title&gt;</span> dans les balises <span class="code-ba">&lt;head&gt;</span> et <span class="code-ba">&lt;/head&gt;</span>. 
+    Enfin nous avons la balise <span class="code-ba">&lt;html&gt;</span> qui elle défini votre 
+    document tout entier, que ce sois le corps, les métas le titre etc...
+</p>
+
+<p>
+    Nous allons maintenant créer une page très basique en html. Petit rappel des élements nécessaires : 
+    <ul>
+        <li>Le <span class="code-entt">&lt;!DOCTYPE html&gt;</span> qui défini le format de notre document</li>
+        <li>La balise <span class="code-ba">&lt;html&gt;</span>, pour ouvrir et fermer le document</li>
+        <li>La balise <span class="code-ba">&lt;head&gt;</span> avec ses balises <span class="code-ba">&lt;meta&gt;</span> et <span class="code-ba">&lt;title&gt;</span></li>
+        <li>Le corp du document avec la balise <span class="code-ba">&lt;body&gt;</span></li>
+    </ul>
+</p>
+<p>Voici le code : </p>
+<pre>
+    <code>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="fr"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;meta http-equiv="X-UA-Compatible" content="ie=edge"&gt;
+            &lt;title&gt;Mon super site !&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;h1&gt;Bonjour et bienvenue sur mon site !&lt;/h1&gt;
+            &lt;p&gt;Je suis très fier de vous présenter ma première page HTML !&lt;/p&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </code>
+</pre>
+
+<p>Vous avez remarquez quelque chose d'intéressant en utilisant ce code non ? On verra ça au chapitre suivant justement ! :D</p>
+
+<div class="resume-chap">
+    <span class="title-resume-chap">En résumé :</span>
+    <p>
+        Les pages HTML se composent toujours des même balises indispensable : 
+        <ul>
+            <li><span class="code-entt">&lt;!DOCTYPE html&gt;</span> qui défini la nature de la page web</li>
+            <li><span class="code-ba">&lt;html&gt;</span> Qui ouvre et ferme le document</li>
+            <li><span class="code-ba">&lt;head&gt;</span> Qui contient les metas et le titre</li>
+            <li><span class="code-ba">&lt;meta&gt;</span> Qui permettent de renseigner / donner des information aux navigateurs</li>
+            <li><span class="code-ba">&lt;title&gt;</span> Qui défini le titre de votre site</li>
+            <li><span class="code-ba">&lt;body&gt;</span> Qui contient le corp de votre site</li>
+        </ul>
+        Il faut toujours avoir ces balises dans une page HTML.
+    </p>
+</div>
